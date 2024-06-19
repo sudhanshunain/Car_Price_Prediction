@@ -1,10 +1,14 @@
-About this project\
-The "Car_Price_Prediction" is a Machine Learning project which takes various car features as input and predicts the price of the car. 
-
 # Car Price Prediction
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.7%2B-blue.svg)
+
+
+### Instructions:
+1. **Project Overview**: A brief description of the project, its goal, and the improvement in the R² score.
+2. **Dataset**: A short note on the dataset used.
+3. **Models Used**: List the models applied in the project.
+4. **Results**: Highlight the improvement in the model's performance.
 
 ## Table of Contents
 
@@ -12,10 +16,6 @@ The "Car_Price_Prediction" is a Machine Learning project which takes various car
 - [Dataset](#dataset)
 - [Models Used](#models-used)
 - [Results](#results)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
@@ -34,10 +34,4 @@ The dataset consists of 6000 data points, each representing a car with various a
 
 Through iterative training and optimization, the R² score of our models was improved from an initial 69% to a final 91%. This significant improvement demonstrates the effectiveness of feature engineering and model selection.
 
-## Installation
-
-To run this project, you need to have Python installed along with several libraries. You can install the necessary dependencies using the following command:
-
-```bash
-pip install -r requirements.txt
 
