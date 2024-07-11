@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        h1 {
+            margin-top: 0;
+            font-size: 28px;
+            text-align: center;
+            color: #4CAF50;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e0e0e0;
+            margin: 20px 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="number"],
+        select {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            align-self: center;
+            width: 100%;
+            max-width: 200px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Django Car Price Prediction Application</h1>
+        <hr>
+        <form action="result">
+            <label for="Location">Location:</label>
+            <select id="Location" name="Location" required>
+                <option value="Pune">Pune</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Coimbatore">Coimbatore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Jaipur">Jaipur</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Kochi">Kochi</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Ahmedabad">Ahmedabad</option>
+                <option value="Bangalore">Bangalore</option>
+            </select>
+
+            <label for="Year">Purchase Year:</label>
+            <input type="number" id="Year" name="Year" required>
+
+            <label for="Fuel_Type">Fuel Type:</label>
+            <select id="Fuel_Type" name="Fuel_Type" required>
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+                <option value="CNG">CNG</option>
+                <option value="LPG">LPG</option>
+            </select>
+
+            <label for="Transmission">Transmission:</label>
+            <select id="Transmission" name="Transmission" required>
+                <option value="Manual">Manual</option>
+                <option value="Automatic">Automatic</option>
+            </select>
+
+            <label for="Owner_Type">Owner Type:</label>
+            <select id="Owner_Type" name="Owner_Type" required>
+                <option value="First">First</option>
+                <option value="Second">Second</option>
+                <option value="Third">Third</option>
+            </select>
+
+            <label for="Mileage">Mileage (in km/l):</label>
+            <input type="number" id="Mileage" name="Mileage" required>
+
+            <label for="Power">Power (in bhp):</label>
+            <input type="number" id="Power" name="Power" required>
+
+            <label for="Engine">Engine CC:</label>
+            <input type="number" id="Engine" name="Engine" required>
+
+            <label for="Seats">Seats:</label>
+            <input type="number" id="Seats" name="Seats" required>
+
+            <label for="Brand">Brand Name:</label>
+            <select id="Brand" name="Brand" required>
+                <option value="Maruti">Maruti</option>
+                <option value="Honda">Honda</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Audi">Audi</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Land Rover">Land Rover</option>
+                <option value="Mitsubishi">Mitsubishi</option>
+                <option value="Ambassador">Ambassador</option>
+                <option value="BMW">BMW</option>
+                <option value="Lamborghini">Lamborghini</option>
+                <option value="Bentley">Bentley</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Jaguar">Jaguar</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="Mini">Mini</option>
+                <option value="Isuzu">Isuzu</option>
+                <option value="Volvo">Volvo</option>
+                <option value="Jeep">Jeep</option>
+                <option value="Datsun">Datsun</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Fiat">Fiat</option>
+                <option value="Ford">Ford</option>
+                <option value="Skoda">Skoda</option>
+                <option value="Mahindra">Mahindra</option>
+                <option value="Force">Force</option>
+            </select>
+
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
+
+
